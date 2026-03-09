@@ -1,0 +1,41 @@
+/* Réinitialisation de base */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+    background-color: #000;
+    color: #fff;
+}
+
+header {
+    text-align: center;
+    padding: 100px 20px;
+}
+
+/* Le conteneur qui définit la durée du scroll pour l'animation.
+   300vh signifie que l'utilisateur devra faire défiler 3 fois la hauteur 
+   de l'écran pour parcourir toute l'animation. */
+.scroll-container {
+    height: 300vh; 
+    position: relative;
+}
+
+/* Le canvas où l'animation est dessinée.
+   Il est "collant" en haut de l'écran pendant que son parent défile. */
+#hero-canvas {
+    width: 100%;
+    height: 100vh; /* Prend toute la hauteur de la vue */
+    position: sticky;
+    top: 0;
+    left: 0;
+}
+
+.content-after {
+    padding: 100px 20px;
+    text-align: center;
+    background-color: #111;
+}
